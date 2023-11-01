@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+      <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container">
+              <img src="imgs/logo@2x.png" class="weatherLogo">
+              <a class="navbar-brand fw-bold" href="#">Weather</a>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active mx-3" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-3" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-3" href="#">Live cameras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-3" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-3" href="#">Contact</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- section1 -->
+          <section>
+            <div class="home d-flex justify-content-center">
+              <input type="search" class="form-control" placeholder="find your location..." id="searchInput" >
+              <button class="btn">Find</button>
+            </div>
+          </section>
+
+          <!-- section2 -->
+          <section>
+            <div class="home2 d-flex justify-content-center">
+              <div class="card-group">
+
+          <!-- today -->
+
+                <div class="card1 card">
+                  <div class="daySection d-flex justify-content-between p-3">
+                    <p class="day" id="today">Thursday</p>
+                    <div class="d-flex">
+                      <p class="date" id="todayDate">23</p><span id="month">March</span>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text city" id="location">Mansoura</p>
+                    <div>
+                      <span class="todayDegree fw-bold" id="todayDegree">30</span><span class="c fw-bold">°C</span>
+                      <img class="todayIcon" id="todayIcon" alt="" >
+                    </div>
+                    <p class="today-description" id="today_description">sunny</p>
+                    <div class="details">
+                      <i class="fas fa-umbrella pr-1 ms-1"></i>
+                      <span id="humidity"></span> <span>%</span>
+
+                      <i class="fas fa-wind pr-1 ms-4"></i>
+                      <span id="wind"></span> <span>km/h</span>
+
+                      <i class="far fa-compass pl-3 pr-1 ms-4" ></i>
+                      <span id="compass"></span>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- next day -->
+
+                <div class="card border-0">
+                  <div class="daySection">
+                    <p class="nextDay text-center p-3" id="nextDay">Friday</p>
+                  </div>
+                  <div class="card-body text-center">
+                    <img class="nextDayIcon" id="nextDayIcon" src="imgs/113.webp" alt="">
+                    <div class="next-degree d-flex justify-content-center">
+                      <p class="nextDayMax fw-bold" id="nextDayMax">15</p> <span class="fw-bold">°C</span>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <p class="nextDayMin" id="nextDayMin">16.5</p> <span>°</span>
+                    </div>
+                    <p class="nextDay-description mt-2" id="nextDay-description">sunny</p>
+                  </div>
+                </div>
+
+                <!-- next next day -->
+
+                <div class="card3 card border-0">
+                  <div class="daySection">
+                    <p class="nextDay text-center p-3" id="nextDay">Saturday</p>
+                  </div>
+                  <div class="card-body text-center">
+                    <img class="nextDayIcon" id="nextDayIcon" src="imgs/113.webp" alt="">
+                    <div class="next-next-degree d-flex justify-content-center">
+                      <p class="nextDayMax fw-bold" id="nextDayMax">15</p> <span class="fw-bold">°C</span>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <p class="nextDayMin" id="nextDayMin">16.5</p> <span>°</span>
+                    </div>
+                    <p class="nextDay-description mt-2" id="nextDay-description">sunny</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+          <!-- subcsribe -->
+          
+           <div class="end">
+            <div class="container">
+              <div class="subcsribe">
+                <div class="row">
+                  <div class="col-md-8 d-flex justify-content-center">
+                    <input class="form-control " type="email" placeholder="Enter your email to subcsribe..." >
+                    <button class="btn">Subscribe</button>
+                    <p class="copyright">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                  </div>
+                  <div class="col-md-4  ">
+                   <div class="icons d-flex justify-content-center">
+                    <i class="fa-brands fa-facebook mx-3"></i>
+                    <i class="fa-brands fa-twitter mx-3"></i>
+                    <i class="fa-brands fa-google-plus mx-3"></i>
+                    <i class="fa-brands fa-pinterest mx-3"></i>
+                   </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+           </div>
+          
+        <script src="js/main.js"></script>
+    </body>
+</html>
